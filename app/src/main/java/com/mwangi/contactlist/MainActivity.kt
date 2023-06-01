@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         var contactEight = ContactsData("", "Cecilia Gakii", "02835431830", "gakiicecil@gmail.com")
         var contactNine = ContactsData("", "Zani Njoroge", "098162433748725", "njorozani@gmail.com")
         var contactTen = ContactsData("", "Stephanie Ike", "0193641739", "ikeokafor@gmail.com")
+
         var contactsList = listOf<ContactsData>(contactOne, contactTwo, contactThree, contactFour, contactFive, contactSix, contactSeven, contactEight, contactNine, contactTen)
         binding.rvNames.layoutManager = LinearLayoutManager(this)
         val contactsAdapter = ContactsRvAdapter(contactsList)
