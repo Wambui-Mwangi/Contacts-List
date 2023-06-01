@@ -13,6 +13,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
+    override fun onResume() {
+        super.onResume()
+        displayContact()
+    }
+
     fun displayContact(){
         var contactOne = ContactsData("", "Esther Mwangi", "0701378809", "esthermwangi@gmail.com")
         var contactTwo = ContactsData("", "John Doe", "0701568009", "johndoe@gmail.com")
