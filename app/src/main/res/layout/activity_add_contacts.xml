@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AddContacts">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".ui.AddContacts">
 
     <ImageView
         android:id="@+id/ivPhoto"
@@ -20,11 +20,11 @@
 
     <ImageView
         android:id="@+id/ivName"
-        android:layout_width="59dp"
-        android:layout_height="73dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="267dp"
-        android:layout_marginEnd="6dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toStartOf="@+id/tilName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,11 +32,11 @@
 
     <ImageView
         android:id="@+id/ivEmailAddress"
-        android:layout_width="55dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toStartOf="@+id/tilEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivName"
@@ -44,11 +44,11 @@
 
     <ImageView
         android:id="@+id/ivPhoneNumber"
-        android:layout_width="55dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="38dp"
-        android:layout_marginEnd="5dp"
+        android:layout_width="46dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toStartOf="@+id/tilPhoneNumber"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivEmailAddress"
@@ -61,6 +61,7 @@
         android:layout_marginStart="142dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="142dp"
+        android:backgroundTint="#06610A"
         android:text="Add Contact"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +90,7 @@
         android:layout_width="314dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="44dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivEmailAddress"
@@ -119,4 +120,16 @@
             android:layout_height="wrap_content"
             android:hint="Phone Number" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/addImage"
+        android:layout_width="33dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="@+id/ivPhoto"
+        app:layout_constraintTop_toTopOf="@+id/ivPhoto"
+        app:srcCompat="@drawable/baseline_add_circle_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

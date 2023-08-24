@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cvContact"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#E2DFDF"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    app:contentPadding="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <ImageView
-        android:id="@+id/ivContactPhoto"
+        android:id="@+id/ivAvatar"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/profile" />
 
-    <TextView
-        android:id="@+id/tvName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:text="Esther Mwangi"
-        app:layout_constraintStart_toEndOf="@+id/ivContactPhoto"
-        app:layout_constraintTop_toTopOf="@+id/ivContactPhoto" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="5dp"
+            android:text="Full Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/ivAvatar"
+            app:layout_constraintTop_toTopOf="@id/ivAvatar" />
 
-    <TextView
-        android:id="@+id/tvPhoneNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="0701378809"
-        app:layout_constraintStart_toEndOf="@+id/ivContactPhoto"
-        app:layout_constraintTop_toBottomOf="@+id/tvName" />
-
-    <TextView
-        android:id="@+id/tvEmailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/ivContactPhoto"
-        app:layout_constraintTop_toBottomOf="@+id/tvPhoneNumber" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
